@@ -14,6 +14,7 @@
 		6D5564421E6D5F530056883A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D5564411E6D5F530056883A /* Assets.xcassets */; };
 		6D5564451E6D5F530056883A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D5564431E6D5F530056883A /* LaunchScreen.storyboard */; };
 		6D5564501E6D5F530056883A /* HideStatusBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D55644F1E6D5F530056883A /* HideStatusBarTests.m */; };
+		6D6284771E6D62D2002D279B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6284761E6D62D2002D279B /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		6D55644B1E6D5F530056883A /* HideStatusBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HideStatusBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D55644F1E6D5F530056883A /* HideStatusBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HideStatusBarTests.m; sourceTree = "<group>"; };
 		6D5564511E6D5F530056883A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D6284751E6D62D2002D279B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		6D6284761E6D62D2002D279B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				6D5564431E6D5F530056883A /* LaunchScreen.storyboard */,
 				6D5564461E6D5F530056883A /* Info.plist */,
 				6D5564351E6D5F530056883A /* Supporting Files */,
+				6D6284751E6D62D2002D279B /* DetailViewController.h */,
+				6D6284761E6D62D2002D279B /* DetailViewController.m */,
 			);
 			path = HideStatusBar;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 				6D55643D1E6D5F530056883A /* ViewController.m in Sources */,
 				6D55643A1E6D5F530056883A /* AppDelegate.m in Sources */,
 				6D5564371E6D5F530056883A /* main.m in Sources */,
+				6D6284771E6D62D2002D279B /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +419,7 @@
 				6D5564561E6D5F530056883A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D5564571E6D5F530056883A /* Build configuration list for PBXNativeTarget "HideStatusBarTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +428,7 @@
 				6D5564591E6D5F530056883A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
