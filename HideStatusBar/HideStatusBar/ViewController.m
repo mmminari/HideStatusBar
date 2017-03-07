@@ -18,44 +18,23 @@
 {
     [super viewDidLoad];
     
-    self.navigationController.navigationBarHidden = YES;
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
-    [UIView animateWithDuration:0.5f animations:^{
-        [self setNeedsStatusBarAppearanceUpdate];
-    }];
-}
-//
-//- (void)viewDidDisappear:(BOOL)animated
-//{
-//    [super viewDidDisappear:animated];
-//    
-//    self.hideStatusBar = NO;
-//}
-
--(BOOL)prefersStatusBarHidden
-{
-    return self.hideStatusBar;
+    self.hide = NO;
+    
+    [self update];
+    
 }
 
 - (IBAction)touchedMoveButton:(UIButton *)sender
 {
     [self performSegueWithIdentifier:@"moveToDetailVC" sender:self];
     
-    self.hideStatusBar = YES;
-    
-    [self viewWillAppear:nil];
-    
-}
-
--(UIStatusBarAnimation)preferredStatusBarUpdateAnimation
-{
-    return UIStatusBarAnimationSlide;
+    self.hide = YES;
 }
 
 

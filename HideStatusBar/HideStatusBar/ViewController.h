@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ParentViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : ParentViewController
 
-@property (assign, nonatomic) BOOL hideStatusBar;
+
 
 @end
 

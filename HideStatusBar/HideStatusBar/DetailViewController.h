@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ParentViewController.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : ParentViewController
 
 @end
