@@ -32,6 +32,13 @@
     return UIStatusBarAnimationSlide;
 }
 
+- (void)setHide:(BOOL)hide
+{
+    _hide = hide;;
+    
+    [self update];
+}
+
 - (void)update
 {
     [UIView animateWithDuration:0.5f animations:^{
