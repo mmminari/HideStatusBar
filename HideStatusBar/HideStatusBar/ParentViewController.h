@@ -11,8 +11,6 @@
 
 @interface ParentViewController : UIViewController
 
-@property (assign, nonatomic) BOOL hide;
-
-- (void)update;
+- (void)updateStatusBarHide:(BOOL)hide;
 
 @end

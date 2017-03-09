@@ -8,8 +8,9 @@
 
 #import "ParentViewController.h"
 
-
 @interface ParentViewController ()
+
+@property (assign, nonatomic) BOOL hide;
 
 @end
 
@@ -32,15 +33,10 @@
     return UIStatusBarAnimationSlide;
 }
 
-- (void)setHide:(BOOL)hide
+- (void)updateStatusBarHide:(BOOL)hide
 {
-    _hide = hide;;
+    self.hide = hide;
     
-    [self update];
-}
-
-- (void)update
-{
     [UIView animateWithDuration:0.5f animations:^{
         [self setNeedsStatusBarAppearanceUpdate];
     }];

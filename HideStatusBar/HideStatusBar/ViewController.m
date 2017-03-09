@@ -24,9 +24,7 @@
 {
     [super viewWillAppear:animated];
     
-    self.hide = NO;
-    
-    [self update];
+    [self updateStatusBarHide:NO];
     
 }
 
@@ -34,7 +32,7 @@
 {
     [self performSegueWithIdentifier:@"moveToDetailVC" sender:self];
     
-    self.hide = YES;
+    [self updateStatusBarHide:YES];
 }
 
 
